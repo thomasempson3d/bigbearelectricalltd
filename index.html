@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="icon" type="image/x-icon" href="Favicon.ico">
-  <title>BigBear Electrical Ltd.</title>
+  <title>BigBear Electrical Ltd | Professional Electrical Services in North Lincolnshire</title>
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="BigBear Electrical Ltd | Professional Electrical Services in North Lincolnshire">
@@ -185,30 +185,27 @@
       border-radius: 50%;
       filter: blur(8px);
       will-change: transform;
+      transform: translateZ(0);
+      backface-visibility: hidden;
+      perspective: 1000px;
     }
 
     @keyframes float1 {
       0% { transform: translate(0, 0); }
-      25% { transform: translate(100px, 50px); }
-      50% { transform: translate(50px, 100px); }
-      75% { transform: translate(-50px, 50px); }
-      100% { transform: translate(-100px, -50px); }
+      50% { transform: translate(50px, 30px); }
+      100% { transform: translate(0, 0); }
     }
 
     @keyframes float2 {
       0% { transform: translate(0, 0); }
-      25% { transform: translate(-80px, 70px); }
-      50% { transform: translate(60px, -40px); }
-      75% { transform: translate(30px, 90px); }
-      100% { transform: translate(-70px, -60px); }
+      50% { transform: translate(-40px, 35px); }
+      100% { transform: translate(0, 0); }
     }
 
     @keyframes float3 {
       0% { transform: translate(0, 0); }
-      25% { transform: translate(60px, -80px); }
-      50% { transform: translate(-50px, -30px); }
-      75% { transform: translate(-90px, 40px); }
-      100% { transform: translate(40px, 90px); }
+      50% { transform: translate(30px, -40px); }
+      100% { transform: translate(0, 0); }
     }
 
     @media (max-width: 1200px) {
@@ -325,7 +322,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const particleContainer = document.getElementById('particles');
-      const particleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 12000), 80);
+      const particleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 30000), 20);
       
       // Create particles
       for (let i = 0; i < particleCount; i++) {
@@ -333,17 +330,21 @@
       }
       
       // Handle window resize
+      let resizeTimeout;
       window.addEventListener('resize', function() {
-        // Clear existing particles
-        particleContainer.innerHTML = '';
-        
-        // Recalculate particle count
-        const newParticleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 12000), 80);
-        
-        // Create new particles
-        for (let i = 0; i < newParticleCount; i++) {
-          createParticle(particleContainer, i);
-        }
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+          // Clear existing particles
+          particleContainer.innerHTML = '';
+          
+          // Recalculate particle count
+          const newParticleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 30000), 20);
+          
+          // Create new particles
+          for (let i = 0; i < newParticleCount; i++) {
+            createParticle(particleContainer, i);
+          }
+        }, 250);
       });
     });
     
@@ -352,12 +353,12 @@
       particle.classList.add('particle');
       
       // Random properties
-      const size = Math.random() * 35 + 15;
-      const opacity = Math.random() * 0.4 + 0.15;
+      const size = Math.random() * 60 + 40; // Larger particles
+      const opacity = Math.random() * 0.3 + 0.2;
       const x = Math.random() * 100;
       const y = Math.random() * 100;
-      const duration = Math.random() * 20 + 30;
-      const delay = Math.random() * -40;
+      const duration = Math.random() * 10 + 20; // Slower animation
+      const delay = Math.random() * -20;
       const floatType = Math.floor(Math.random() * 3) + 1;
       
       // Apply styles
@@ -366,7 +367,7 @@
       particle.style.left = `${x}%`;
       particle.style.top = `${y}%`;
       particle.style.background = `radial-gradient(circle, rgba(255, 98, 5, ${opacity}) 0%, rgba(255, 98, 5, ${opacity * 0.4}) 70%, rgba(255, 98, 5, 0) 100%)`;
-      particle.style.animation = `float${floatType} ${duration}s infinite alternate ease-in-out ${delay}s`;
+      particle.style.animation = `float${floatType} ${duration}s infinite ease-in-out ${delay}s`;
       
       // Add to container
       container.appendChild(particle);
