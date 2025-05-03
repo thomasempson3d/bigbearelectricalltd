@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of important assets
+Allow: /Favicon.ico
+Allow: /Favicon-32x32.png
+Allow: /Favicon-16x16.png
+Allow: /apple-touch-icon.png
+Allow: /site.webmanifest
+Allow: /BigBearElectricalLtd.png
+
+# Sitemap location
+Sitemap: https://bigbearelectricalltd.co.uk/sitemap.xml
