@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="Favicon.ico">
+  <title>BigBear Electrical Ltd | Professional Electrical Services in North Lincolnshire</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="BigBear Electrical Ltd | Professional Electrical Services in North Lincolnshire">
+  <meta name="description" content="BigBear Electrical Ltd offers certified electrical services for domestic, commercial, and light industrial clients in North Lincolnshire. Expert electricians for repairs, installations, and rewires.">
+  <meta name="keywords" content="electrician, electrical services, North Lincolnshire, domestic electrician, commercial electrician, electrical installation, electrical repairs, electrical rewires">
+  <meta name="author" content="BigBear Electrical Ltd">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bigbearelectrical.co.uk/">
+  <meta property="og:title" content="BigBear Electrical Ltd | Professional Electrical Services">
+  <meta property="og:description" content="Certified electrical services for domestic, commercial, and light industrial clients in North Lincolnshire.">
+  <meta property="og:image" content="https://bigbearelectrical.co.uk/BigBearElectricalLtd.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bigbearelectrical.co.uk/">
+  <meta property="twitter:title" content="BigBear Electrical Ltd | Professional Electrical Services">
+  <meta property="twitter:description" content="Certified electrical services for domestic, commercial, and light industrial clients in North Lincolnshire.">
+  <meta property="twitter:image" content="https://bigbearelectrical.co.uk/BigBearElectricalLtd.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://bigbearelectrical.co.uk/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "BigBear Electrical Ltd",
+      "image": "https://bigbearelectrical.co.uk/BigBearElectricalLtd.png",
+      "description": "Certified electrical services for domestic, commercial, and light industrial clients in North Lincolnshire",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "North Lincolnshire"
+      },
+      "serviceType": ["Electrical Services", "Domestic Electrical", "Commercial Electrical", "Industrial Electrical"],
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "53.6056",
+          "longitude": "-0.5597"
+        },
+        "geoRadius": "20000"
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    @font-face {
+      font-family: 'Neue Haas Grotesk Display Pro';
+      src: url('NeueHaasDisplayRoman.ttf') format('truetype');
+      font-weight: 55;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Neue Haas Grotesk Display Pro';
+      src: url('NeueHaasDisplayThin.ttf') format('truetype');
+      font-weight: 55;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'Neue Haas Grotesk Display Pro';
+      src: url('NeueHaasDisplayMediu.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 10;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      width: 200px;
+      height: auto;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 80px;
+      max-width: 100%;
+    }
+
+    h1 {
+      color: #ff6205;
+      font-size: 150px;
+      font-weight: 500;
+      line-height: 140px;
+      margin-bottom: 1.5rem;
+      max-width: 100%;
+    }
+
+    p {
+      max-width: 28rem;
+      font-size: 24px;
+      line-height: 35px;
+      margin-bottom: 3rem;
+      font-weight: 55;
+    }
+
+    .highlight {
+      color: #ff6205;
+      font-style: italic;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #ff6205;
+      color: white;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      font-size: 1.125rem;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      margin-top: auto;
+      margin-bottom: 2rem;
+      width: 28rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(255, 98, 5, 0.2);
+    }
+
+    .button:hover {
+      background-color: rgba(255, 98, 5, 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 8px rgba(255, 98, 5, 0.3);
+    }
+
+    .particle-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(8px);
+      will-change: transform;
+    }
+
+    @keyframes float1 {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(100px, 50px); }
+      50% { transform: translate(50px, 100px); }
+      75% { transform: translate(-50px, 50px); }
+      100% { transform: translate(-100px, -50px); }
+    }
+
+    @keyframes float2 {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-80px, 70px); }
+      50% { transform: translate(60px, -40px); }
+      75% { transform: translate(30px, 90px); }
+      100% { transform: translate(-70px, -60px); }
+    }
+
+    @keyframes float3 {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(60px, -80px); }
+      50% { transform: translate(-50px, -30px); }
+      75% { transform: translate(-90px, 40px); }
+      100% { transform: translate(40px, 90px); }
+    }
+
+    @media (max-width: 1200px) {
+      .container {
+        padding: 0 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0 1.5rem;
+        margin: 0;
+      }
+      
+      .logo {
+        width: 120px;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      
+      .content {
+        padding-top: 40px;
+        max-width: 28rem;
+        margin: 0;
+      }
+      
+      h1 {
+        font-size: 80px;
+        line-height: 90px;
+      }
+      
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 2rem;
+        max-width: 100%;
+      }
+      
+      .button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 28rem;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+        margin: 0 auto;
+      }
+      
+      .logo {
+        width: 160px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      
+      .content {
+        padding-top: 20px;
+        max-width: 28rem;
+        margin: 0 auto;
+        align-items: center;
+      }
+      
+      h1 {
+        font-size: 80px;
+        line-height: 90px;
+        text-align: center;
+      }
+      
+      p {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+        text-align: center;
+      }
+      
+      .button {
+        width: 100%;
+        max-width: 28rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Particle Background -->
+  <div class="particle-container" id="particles"></div>
+
+  <div class="container">
+    <!-- Logo -->
+    <img src="BigBearElectricalLtd.png" alt="BigBear Electrical Ltd. Logo" class="logo">
+
+    <!-- Main content -->
+    <main class="content">
+      <h1>Coming<br>Soon</h1>
+      
+      <p>
+        <span class="highlight">BigBear Electrical Ltd.</span> offers certified electrical 
+        services for domestic, commercial, and light industrial clients in North Lincolnshire, covering 
+        everything from minor repairs to full installations and rewires.
+      </p>
+
+      <a href="https://briggelectricltd.co.uk/" class="button" aria-label="Visit our current website for more information">Visit Our Current Site</a>
+    </main>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const particleContainer = document.getElementById('particles');
+      const particleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 12000), 80);
+      
+      // Create particles
+      for (let i = 0; i < particleCount; i++) {
+        createParticle(particleContainer, i);
+      }
+      
+      // Handle window resize
+      window.addEventListener('resize', function() {
+        // Clear existing particles
+        particleContainer.innerHTML = '';
+        
+        // Recalculate particle count
+        const newParticleCount = Math.min(Math.floor((window.innerWidth * window.innerHeight) / 12000), 80);
+        
+        // Create new particles
+        for (let i = 0; i < newParticleCount; i++) {
+          createParticle(particleContainer, i);
+        }
+      });
+    });
+    
+    function createParticle(container, id) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      
+      // Random properties
+      const size = Math.random() * 35 + 15;
+      const opacity = Math.random() * 0.4 + 0.15;
+      const x = Math.random() * 100;
+      const y = Math.random() * 100;
+      const duration = Math.random() * 20 + 30;
+      const delay = Math.random() * -40;
+      const floatType = Math.floor(Math.random() * 3) + 1;
+      
+      // Apply styles
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      particle.style.left = `${x}%`;
+      particle.style.top = `${y}%`;
+      particle.style.background = `radial-gradient(circle, rgba(255, 98, 5, ${opacity}) 0%, rgba(255, 98, 5, ${opacity * 0.4}) 70%, rgba(255, 98, 5, 0) 100%)`;
+      particle.style.animation = `float${floatType} ${duration}s infinite alternate ease-in-out ${delay}s`;
+      
+      // Add to container
+      container.appendChild(particle);
+    }
+  </script>
+</body>
+</html>
